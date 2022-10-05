@@ -2,16 +2,19 @@ import React from 'react';
 import './styles/index.scss';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/AppRouter';
-import { NavBar } from 'widgets/NavBar';
+import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/SideBar';
 
 const App = () => {
     const { theme } = useTheme();
 
     return (
         <div className={`app ${theme}`}>
-            <NavBar />
-
-            <AppRouter />
+            <Navbar />
+            <div className="content-page">
+                <Sidebar />
+                <AppRouter />
+            </div>
         </div>
     );
 };

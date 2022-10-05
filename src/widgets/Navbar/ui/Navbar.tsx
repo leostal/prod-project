@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { classNames } from 'shared/utils/classNames';
-import styles from './NavBar.module.scss';
+import styles from './Navbar.module.scss';
 import AppLink from 'shared/ui/AppLink/ui/AppLink';
 import { ThemeChanger } from 'shared/ui/ThemeChanger';
 
@@ -8,13 +8,11 @@ interface NavBarProps {
     className?: string;
 }
 
-const NavBar: FC<NavBarProps> = props => {
+const Navbar: FC<NavBarProps> = props => {
     const { className } = props;
 
     return (
-        <div className={classNames(styles.navBar, {}, [className])}>
-            <ThemeChanger />
-
+        <div className={classNames(styles.navbar, {}, [className])}>
             <div className={styles.links}>
                 <AppLink
                     className={styles.links_item}
@@ -34,4 +32,4 @@ const NavBar: FC<NavBarProps> = props => {
     );
 };
 
-export default NavBar;
+export default Navbar;
