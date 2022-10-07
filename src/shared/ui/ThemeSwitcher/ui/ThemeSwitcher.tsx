@@ -1,13 +1,13 @@
-import React, { FC } from 'react';
-import { classNames } from 'shared/utils/classNames';
-import styles from './ThemeSwitcher.module.scss';
-import { Button } from 'shared/ui/Button';
-import { useTheme } from 'app/providers/ThemeProvider';
-import { Theme } from 'app/providers/ThemeProvider/utils/ThemeContext';
-import { ButtonVariant } from 'shared/ui/Button/ui/Button';
+import React, { FC } from "react";
+import { classNames } from "shared/utils/classNames";
+import styles from "./ThemeSwitcher.module.scss";
+import { Button } from "shared/ui/Button";
+import { useTheme } from "app/providers/ThemeProvider";
+import { Theme } from "app/providers/ThemeProvider/utils/ThemeContext";
+import { ButtonVariant } from "shared/ui/Button/ui/Button";
 
-import ThemeDarkIcon from 'shared/assets/icons/dark-theme.svg';
-import ThemeLightIcon from 'shared/assets/icons/light-theme.svg';
+import ThemeDarkIcon from "shared/assets/icons/dark-theme.svg";
+import ThemeLightIcon from "shared/assets/icons/light-theme.svg";
 
 interface ThemeSwitcherProps {
     className?: string;

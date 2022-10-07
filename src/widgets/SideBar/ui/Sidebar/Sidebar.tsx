@@ -1,8 +1,8 @@
-import React, { FC, useState } from 'react';
-import { classNames } from 'shared/utils/classNames';
-import styles from './Sidebar.module.scss';
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
-import LangSwitcher from 'shared/ui/LangSwitcher/ui/LangSwitcher';
+import React, { FC, useState } from "react";
+import { classNames } from "shared/utils/classNames";
+import styles from "./Sidebar.module.scss";
+import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
+import LangSwitcher from "shared/ui/LangSwitcher/ui/LangSwitcher";
 
 interface SidebarProps {
     className?: string;
