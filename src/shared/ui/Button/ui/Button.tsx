@@ -1,13 +1,13 @@
-import React, { ButtonHTMLAttributes, FC } from "react";
+import React, { ButtonHTMLAttributes, FC } from 'react';
 
-import styles from "./Button.module.scss";
+import styles from './Button.module.scss';
 
-import { classNames } from "shared/utils/classNames";
+import { classNames } from 'shared/utils/classNames';
 
 export enum ButtonVariant {
-    CLEAR = "clear",
-    CONTAINED = "contained",
-    OUTLINED = "outlined",
+    CLEAR = 'clear',
+    CONTAINED = 'contained',
+    OUTLINED = 'outlined',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

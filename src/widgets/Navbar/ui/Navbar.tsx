@@ -1,12 +1,12 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
-import styles from "./Navbar.module.scss";
+import styles from './Navbar.module.scss';
 
-import AppLink from "shared/ui/AppLink/ui/AppLink";
-import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
-import { classNames } from "shared/utils/classNames";
+import AppLink from 'shared/ui/AppLink/ui/AppLink';
+import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher';
+import { classNames } from 'shared/utils/classNames';
 
 interface NavBarProps {
     className?: string;
@@ -21,16 +21,16 @@ const Navbar: FC<NavBarProps> = props => {
             <div className={styles.links}>
                 <AppLink
                     className={styles.links_item}
-                    to={"/"}
+                    to={'/'}
                 >
-                    {t("Главная")}
+                    {t('Главная')}
                 </AppLink>
 
                 <AppLink
                     className={styles.links_item}
-                    to={"/about"}
+                    to={'/about'}
                 >
-                    {t("О сайте")}
+                    {t('О сайте')}
                 </AppLink>
             </div>
         </div>
