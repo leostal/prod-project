@@ -1,10 +1,13 @@
 import React, { FC } from "react";
-import { classNames } from "shared/utils/classNames";
-import styles from "./LangSwitcher.module.scss";
+
 import { useTranslation } from "react-i18next";
+
+import styles from "./LangSwitcher.module.scss";
+
+import TranslateIcon from "shared/assets/icons/translate.svg";
 import { Button } from "shared/ui/Button";
 import { ButtonVariant } from "shared/ui/Button/ui/Button";
-import TranslateIcon from "shared/assets/icons/translate.svg";
+import { classNames } from "shared/utils/classNames";
 
 interface LangSwitcherProps {
     className?: string;

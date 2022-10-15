@@ -1,9 +1,12 @@
 import React, { FC } from "react";
-import { classNames } from "shared/utils/classNames";
+
+import { useTranslation } from "react-i18next";
+
 import styles from "./Navbar.module.scss";
+
 import AppLink from "shared/ui/AppLink/ui/AppLink";
 import { ThemeSwitcher } from "shared/ui/ThemeSwitcher";
-import { useTranslation } from "react-i18next";
+import { classNames } from "shared/utils/classNames";
 
 interface NavBarProps {
     className?: string;

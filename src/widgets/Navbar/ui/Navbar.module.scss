@@ -1,10 +1,12 @@
 .navbar {
     display: flex;
+    align-items: center;
+
     width: 100%;
     height: var(--navbar-height);
-    background-color: var(--secondary-bg-color);
-    align-items: center;
     padding: 20px;
+
+    background-color: var(--secondary-bg-color);
 }
 
 .links {
